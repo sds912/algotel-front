@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+<<<<<<< HEAD
 import { HomeComponent } from './pages/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
@@ -63,6 +64,16 @@ import { TopPostsComponent } from './components/top-posts/top-posts.component';
 
 
 
+=======
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule
+>>>>>>> da6fbe428f571b5e8f6053c1aaa39215df51c5a6
   ],
   providers: [],
   bootstrap: [AppComponent]
