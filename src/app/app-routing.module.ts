@@ -1,3 +1,4 @@
+import { SearchComponent } from './pages/search/search.component';
 import { ResultComponent } from './pages/result/result.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: "results",
     component: ResultComponent
+  },
+  {
+    path: "search",
+    component: SearchComponent
   }
 ];
 

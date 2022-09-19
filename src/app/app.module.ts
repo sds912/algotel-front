@@ -1,3 +1,4 @@
+import { LoaderComponent } from './components/loader/loader.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -24,6 +25,7 @@ import { HomeTopCarouselComponent } from './components/home-top-carousel/home-to
 import { HttpClientModule } from '@angular/common/http';
 import { FeaturesComponent } from './components/features/features.component';
 import { TopPostsComponent } from './components/top-posts/top-posts.component';
+import { SearchComponent } from './pages/search/search.component';
 
 
 
@@ -44,7 +46,9 @@ import { TopPostsComponent } from './components/top-posts/top-posts.component';
     SearchBtnComponent,
     HomeTopCarouselComponent,
     FeaturesComponent,
-    TopPostsComponent
+    TopPostsComponent,
+    LoaderComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
