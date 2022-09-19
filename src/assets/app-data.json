@@ -1,0 +1,49 @@
+{
+  "home": {
+    "text1": "Du nouveau au Sénégal \n vivez l'expérience de quelques heures à l'hôtel",
+    "text2": "Reservez dans plus de 200 hôtels et payer en fonction du temps dont vous avez besoin",
+    "features": [
+      {
+        "label": "Décider de l'heure d'arrivée et de départ de l'hôtel",
+        "icon": "assets/clock.png"
+      },
+      {
+        "label": "Profitez de tous les \n services inclus dans l'hôtel",
+        "icon": "assets/bandeja.png"
+      },
+      {
+        "label": "Confirmation immédiate \n et Annulation gratuite",
+        "icon": "assets/poignee-de-main.png"
+      },
+      {
+        "label": "Un carde sécurisé  \n pour un séjour paisible",
+        "icon": "assets/shield.png"
+      },
+      {
+        "label": "Jusqu'à 75% \n de  réduction par rapport à \nla nuitée",
+        "icon": "assets/promotions.png"
+      },
+      {
+        "label": "Exellente avis \n Une note de 4.5 sur trustpilot",
+        "icon": "assets/pouces-vers-le-haut.png"
+      }
+    ],
+
+    "title1": "Profitez de votre temps avec un micro-séjour",
+    "title2": "Salle de réunion à Dakar",
+    "top": [
+      {
+        "label": "Découvrez les meilleurs Hôtels où travailler",
+        "img": "assets/work.png"
+      },
+      {
+        "label": "Découvrez les meilleurs Hôtels pour déconcenter",
+        "img": "assets/rest.png"
+      },
+      {
+        "label": "Découvrez les meilleurs Hôtels pour voyager",
+        "img": "assets/travel.png"
+      }
+    ]
+  }
+}
