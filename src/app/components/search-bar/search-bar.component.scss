@@ -1,0 +1,31 @@
+
+.ng-autocomplete{
+  max-width: 100%;
+  position: relative;
+}
+
+
+
+.demo-inline-calendar-card {
+  width: 300px;
+}
+
+.time-start, .time-end{
+  max-width: 100% !important;
+  border: 1px solid #ccc;
+  padding: .8em;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.time-start{
+  background-color: rgb(2, 132, 43);
+}
+
+.time-end{
+  background-color: rgb(176, 138, 3);
+}
+

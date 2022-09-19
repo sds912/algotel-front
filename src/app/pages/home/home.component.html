@@ -1,0 +1,12 @@
+<div class="container-fluid m-0">
+  <app-nav-bar></app-nav-bar>
+  <app-search-btn></app-search-btn>
+  <div class="container">
+    <h3 class="my-3">{{data?.home.text1}}</h3>
+    <h6>{{data?.home.text2}}</h6>
+    <app-home-top-carousel></app-home-top-carousel>
+    <app-features [features]="data?.home.features"></app-features>
+    <h3 class="my-3 text-center">{{data?.home.title1}}</h3>
+    <app-top-posts [posts]="data?.home.top"></app-top-posts>
+  </div>
+</div>
