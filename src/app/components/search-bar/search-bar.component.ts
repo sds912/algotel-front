@@ -122,7 +122,10 @@ export class SearchBarComponent implements OnInit {
   back(){
     if(this.step > 0){
       this.step --;
+    }else{
+      this.router.navigate([""])
     }
+
   }
 
   onSelect(v?: Date){

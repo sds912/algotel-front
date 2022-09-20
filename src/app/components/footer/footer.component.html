@@ -1,1 +1,31 @@
-<p>footer works!</p>
+<div class="container mt-5 pb-5 px-4">
+ <div class="row">
+  <div class="col-12 col-md-3">
+    <img src="assets/logo-2.png" style="width: 60%;" class="img-fluid"/>
+    <ul class="list-unstyled d-flex pl-4">
+      <li><i class="fa fa-facebook"></i></li>
+      <li><i class="fa fa-twitter mx-3"></i></li>
+      <li><i class="fa fa-google"></i></li>
+      <li><i class="fa fa-play mx-3"></i></li>
+    </ul>
+  </div>
+  <div class="col-12 col-md-3">
+    <ul class="list-unstyled">
+      <li *ngFor="let i of data.sect1">{{i}}</li>
+    </ul>
+  </div>
+  <div class="col-12 col-md-3">
+    <ul class="list-unstyled">
+      <li *ngFor="let i of data.sect2">{{i}}</li>
+    </ul>
+  </div>
+  <div class="col-12 col-md-3">
+     <h5 style="font-size: 22px;">{{data.sect3.contact}}</h5>
+     <p><i class="fa fa-phone"></i> {{data.sect3.phone}}</p>
+     <p><i class="fa fa-map-marker"></i> {{data.sect3.address}}</p>
+
+  </div>
+
+ </div>
+ <p>© {{year}} Algotel / all right reserved</p>
+</div>

@@ -10,19 +10,15 @@ export class HomeTopCarouselComponent implements OnInit {
   images:any [] = [
     {
       "label": "",
-      "url": "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
+      "url": "assets/work.png"
     },
     {
       "label": "",
-      "url": "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
+      "url": "assets/rest.png"
     },
     {
       "label": "",
-      "url": "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
-    },
-    {
-      "label": "",
-      "url": "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
+      "url": "assets/travel.png"
     }
   ]
 

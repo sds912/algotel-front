@@ -48,5 +48,15 @@
     "title3": "Hôtel à l'heure dans les principales villes",
     "text3": "Télécharger l'application qui \n révolutionne le secteur \n hôtelier au Sénégal"
 
+  },
+ "footer" :{
+      "sect1": ["Accord Utilisateur", "Politique de", "confidentialité", "Politique d'utilisation", "des coukies"],
+      "sect2": ["Acceil", "Qui sommes nous", "Service", "Blog"],
+      "sect3": {
+        "contact": "Contact",
+        "address": "2 rue MAURICE  BARTEAUX",
+        "phone": "+123 456 789 00"
+      }
+
   }
 }

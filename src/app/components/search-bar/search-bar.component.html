@@ -1,13 +1,13 @@
-<div class="container mt-3">
+<div class="container ">
   <div class="d-flex mb-2">
     <div class="align-self-center">
-      <button *ngIf="step > 0" class="btn btn-outline-default bg-white" >
+      <button class="btn btn-outline-default" style="background-color: transparent;" >
         <i class="fa fa-long-arrow-left"  (click)="back()"></i>
       </button>
     </div>
     <div class="align-self-center pt-3 ml-3">
-      <h3 *ngIf="step == 1" >Choisir une date de séjour</h3>
-      <h3 *ngIf="step == 0" >Rechercher un hôtel</h3>
+      <h3 *ngIf="step == 1" class="font-weight-bold">Choisir une date de séjour</h3>
+      <h3 *ngIf="step == 0" class="font-weight-bold">Rechercher un hôtel</h3>
     </div>
   </div>
 
@@ -25,7 +25,7 @@
       </ng-autocomplete>
 
       <ng-template #itemTemplate let-item>
-      <div class="d-flex">
+      <div class="d-flex align-items-center px-3">
         <i class="fa fa-map-marker"></i>
         <a [innerHTML]="item.name" class="ml-2"></a>
       </div>

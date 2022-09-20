@@ -2,7 +2,21 @@
 .ng-autocomplete{
   max-width: 100%;
   position: relative;
+  background-color: #FFFFFF;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  height: 65px;
+  padding-top: 10px;
+  ::ng-deep .autocomplete-container {
+    box-shadow: none;
+    outline: none !important;
+    border: none !important;
+
+
+
+  }
 }
+
+
 
 
 
@@ -28,4 +42,5 @@
 .time-end{
   background-color: rgb(176, 138, 3);
 }
+
 

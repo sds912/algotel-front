@@ -1,7 +1,7 @@
 <div class="container-fluid m-0 p-0">
   <app-search-btn></app-search-btn>
-  <div class="container py-5">
-    <h3 class="mt-4 mb-2">{{data?.home.text1}}</h3>
+  <div class="container mt-5">
+    <h3 class="mt-4 mb-2" style="text-transform: uppercase; line-height: 36px">{{data?.home.text1}}</h3>
     <h6>{{data?.home.text2}}</h6>
     <app-home-top-carousel></app-home-top-carousel>
     <app-features [features]="data?.home.features"></app-features>
@@ -14,6 +14,7 @@
     <h3 class="mt-4 mb-2 px-1">{{data?.home.title3}}</h3>
     <app-home-bottom-carousel></app-home-bottom-carousel>
     <app-download [text]="data?.home.text3" ></app-download>
+    <app-footer [data]="data?.footer"></app-footer>
   </div>
 </div>
 <app-loader></app-loader>
