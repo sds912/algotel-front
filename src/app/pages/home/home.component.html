@@ -1,16 +1,19 @@
 <div class="container-fluid m-0 p-0">
   <app-search-btn></app-search-btn>
   <div class="container py-5">
-    <h3 class="my-3">{{data?.home.text1}}</h3>
+    <h3 class="mt-4 mb-2">{{data?.home.text1}}</h3>
     <h6>{{data?.home.text2}}</h6>
     <app-home-top-carousel></app-home-top-carousel>
     <app-features [features]="data?.home.features"></app-features>
-    <h3 class="my-3 text-left px-3">{{data?.home.title1}}</h3>
+    <h3 class="mt-4 mb-2 text-left px-3">{{data?.home.title1}}</h3>
     <app-top-posts [posts]="data?.home.top"></app-top-posts>
-    <h3 class="my-3 px-1">{{data?.home.title2}}</h3>
+    <h3 class="mt-4 mb-2 px-1">{{data?.home.title2}}</h3>
     <div class="card" style="border-radius: 8px;">
       <img src="assets/banner.png" class="img-fluid" />
     </div>
+    <h3 class="mt-4 mb-2 px-1">{{data?.home.title3}}</h3>
+    <app-home-bottom-carousel></app-home-bottom-carousel>
+    <app-download [text]="data?.home.text3" ></app-download>
   </div>
 </div>
 <app-loader></app-loader>

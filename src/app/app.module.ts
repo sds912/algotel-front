@@ -26,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { FeaturesComponent } from './components/features/features.component';
 import { TopPostsComponent } from './components/top-posts/top-posts.component';
 import { SearchComponent } from './pages/search/search.component';
+import { HomeBottomCarouselComponent } from './components/home-bottom-carousel/home-bottom-carousel.component';
+import { DownloadComponent } from './components/download/download.component';
 
 
 
@@ -48,7 +50,9 @@ import { SearchComponent } from './pages/search/search.component';
     FeaturesComponent,
     TopPostsComponent,
     LoaderComponent,
-    SearchComponent
+    SearchComponent,
+    HomeBottomCarouselComponent,
+    DownloadComponent
   ],
   imports: [
     BrowserModule,
