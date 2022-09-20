@@ -17,7 +17,6 @@ import {MatIconModule} from '@angular/material/icon';
 import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
-import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
 import { ResultComponent } from './pages/result/result.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { SearchBtnComponent } from './components/search-btn/search-btn.component';
@@ -66,7 +65,6 @@ import { DownloadComponent } from './components/download/download.component';
     AutocompleteLibModule,
     MatDatepickerModule,
     MatMomentDateModule,
-    NgxMaterialTimepickerModule,
     HttpClientModule
 
 
