@@ -1,3 +1,5 @@
+import { HotelsService } from './../../services/hotels.service';
+import { PostsService } from './../../services/posts.service';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
@@ -12,11 +14,15 @@ export class HomeComponent implements OnInit {
 
   data: any;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient,
+    private hotelService: HotelsService,
+    private postService:PostsService) {
+    //hotelService.initHotel()
+    //postService.initPost();
+   }
 
   ngOnInit(): void {
     this.httpClient.get("assets/app-data.json").subscribe(data =>{
-      console.log(data);
       this.data = data;
     })
   }

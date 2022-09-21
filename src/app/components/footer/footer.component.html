@@ -11,18 +11,18 @@
   </div>
   <div class="col-12 col-md-3">
     <ul class="list-unstyled">
-      <li *ngFor="let i of data.sect1">{{i}}</li>
+      <li *ngFor="let i of data?.sect1">{{i}}</li>
     </ul>
   </div>
   <div class="col-12 col-md-3">
     <ul class="list-unstyled">
-      <li *ngFor="let i of data.sect2">{{i}}</li>
+      <li *ngFor="let i of data?.sect2">{{i}}</li>
     </ul>
   </div>
   <div class="col-12 col-md-3">
-     <h5 style="font-size: 22px;">{{data.sect3.contact}}</h5>
-     <p><i class="fa fa-phone"></i> {{data.sect3.phone}}</p>
-     <p><i class="fa fa-map-marker"></i> {{data.sect3.address}}</p>
+     <h5 style="font-size: 22px;">{{data?.sect3.contact}}</h5>
+     <p><i class="fa fa-phone"></i> {{data?.sect3.phone}}</p>
+     <p><i class="fa fa-map-marker"></i> {{data?.sect3.address}}</p>
 
   </div>
 

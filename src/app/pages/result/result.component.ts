@@ -1,5 +1,9 @@
+import { Search } from 'src/app/models/search';
+import { PostsService } from './../../services/posts.service';
+import { state } from '@angular/animations';
 import { Post } from './../../models/post';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-result',
@@ -8,60 +12,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
-  posts: Post[] = [
-    {
-      id: 3,
-      label:  "Radisson Hotel Dakar Diamniadio",
-      price:  50000,
-      desc:   "desc",
-      hours:  ["18:00","13:30"],
-      images: [
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
-      ]
-    },
-    {
-      id: 4,
-      label:  "Hotel Jardin Savana Dakar",
-      price:  60000,
-      desc:   "desc",
-      hours:  ["16:00","14:30"],
-      images: [
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
-      ]
-    },
-    {
-      id: 5,
-      label:  "Terrou-Bi",
-      price:  80000,
-      desc:   "desc",
-      hours:  ["12:00","15:30"],
-      images: [
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
-      ]
-    },
-    {
-      id: 6,
-      label:  "Yaas Hotel Dakar Almadies",
-      price:  50000,
-      desc:   "desc",
-      hours:  ["18:00","13:30"],
-      images: [
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg",
-        "https://www.hakwood.com/images/gallery/71227/1574X1050/005%20HV2231%20-%20Maison%20de%20Lee%20-%20Vancouver%20Canada.jpg"
-      ]
-    }
-  ]
+  posts: Post[] = [];
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private postService: PostsService) { }
 
   ngOnInit(): void {
+    const routeParams: any = this.route.snapshot.paramMap;
+    let param: Search = {
+      label: routeParams.get("label"),
+      address: routeParams.get("address"),
+      date: routeParams.get("date")
+    }
+    this.postService.findByFilter(param).subscribe(res => {
+      this.posts = res;
+    })
   }
 
 }

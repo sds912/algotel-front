@@ -27,6 +27,14 @@ import { TopPostsComponent } from './components/top-posts/top-posts.component';
 import { SearchComponent } from './pages/search/search.component';
 import { HomeBottomCarouselComponent } from './components/home-bottom-carousel/home-bottom-carousel.component';
 import { DownloadComponent } from './components/download/download.component';
+import { FirebaseAppModule, initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 
 
@@ -65,12 +73,22 @@ import { DownloadComponent } from './components/download/download.component';
     AutocompleteLibModule,
     MatDatepickerModule,
     MatMomentDateModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
+
 
 
 
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

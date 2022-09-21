@@ -1,7 +1,13 @@
+import { HotelsService } from './../../services/hotels.service';
+import { Hotel } from './../../models/hotel';
+import { HostPort } from './../../../../node_modules/@grpc/grpc-js/build/src/uri-parser.d';
+import { PostsService } from './../../services/posts.service';
+import { Post } from './../../models/post';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Search } from 'src/app/models/search';
 import { LoaderService } from 'src/app/services/loader.service';
+import { state } from '@angular/animations';
 
 
 @Component({
@@ -19,91 +25,14 @@ export class SearchBarComponent implements OnInit {
     date: ""
   };
 
-  keyword = 'name';
-  data = [
-    {
-      id: 1,
-      name: 'Radisson Blu Hotel, Dakar Sea Plaza'
-    },
-     {
-       id: 2,
-       name: 'Hotel Lagon 2'
-     },
-     {
-       id: 3,
-       name: 'Radisson Hotel Dakar Diamniadio'
-     },
-     {
-      id:4,
-      name: "Hotel Jardin Savana Dakar"
-     },
-     {
-      id:5,
-      name: "Terrou-Bi"
-     },
-     {
-      id:6,
-      name: "Yaas Hotel Dakar Almadies"
-     },
-     {
-      id:7,
-      name: "Hotel L'Adresse Dakar"
-     },
-     {
-      id:8,
-      name: "Airport Hotel Casino du Cap-vert"
-     },
-     {
-      id:9,
-      name: "Hôtel Fleur de Lys Plateau "
-     },
-     {
-      id:10,
-      name: "Casa Mara Dakar"
-     },
-     {
-      id:11,
-      name: "Cher Cite Axa"
-     },
-     {
-      id:12,
-      name: "Penthouse Appartments in Almadies"
-     },
-     {
-      id: 13,
-      name: "BOMA LifeStyle Hotel"
-     },
-     {
-      id:14,
-      name: "Villa soleil du SénégalOpens"
-     },
-     {
-      id:15,
-      name: "Hotel L'Adresse DakarOpens"
-     },{
-      id:16,
-      name: "Hotel Le Littoral Des AlmadiesOpens "
-     },
-     {
-      id:17,
-      name: "La Madrague-Surf Beach SeaOpens"
-     },
-     {
-      id:18,
-      name: "Yaas Hotel Dakar AlmadiesOpens"
-     },
-     {
-      id:19,
-      name: "Café de Rome"
-     },
-     {
-      id:20,
-      name: "Maison d'hôtes OpanoramicOpens"
-     }
-  ];
+  keyword = 'label';
+
+  hotels:Hotel[] = [];
 
 
-  selectEvent(item: any) {
+  selectEvent(item: Hotel) {
+    this.search.address = item.address;
+    this.search.label   = item.label;
     if(item != null){
       this.step ++;
     }
@@ -111,8 +40,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   onChangeSearch(val: string) {
-    // fetch remote data from here
-    // And reassign the 'data' which is binded to 'data' property.
+
   }
 
   onFocused(e: any){
@@ -131,14 +59,22 @@ export class SearchBarComponent implements OnInit {
   onSelect(v?: Date){
     this.loader.show();
     this.search.date = v!.toISOString();
-    this.router.navigate(['results',{data: this.search}])
+    this.router.navigate(['results', {
+      "label":   this.search.label,
+      "address": this.search.address,
+      "date":    this.search.date}])
 
   }
 
-  constructor(private router: Router, private loader: LoaderService) { }
+  constructor(
+    private router: Router,
+    private hotelService: HotelsService,
+    private loader: LoaderService) { }
 
   ngOnInit(): void {
-
+    this.hotelService.findAllHotels().subscribe(res => {
+      this.hotels = res;
+    })
   }
 
 }

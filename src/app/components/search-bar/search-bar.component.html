@@ -14,7 +14,7 @@
   <div *ngIf="step==0">
     <div class="ng-autocomplete">
       <ng-autocomplete
-        [data]="data"
+        [data]="hotels"
         [searchKeyword]="keyword"
         placeholder="Ville, hotel ..."
         (selected)='selectEvent($event)'
@@ -27,7 +27,7 @@
       <ng-template #itemTemplate let-item>
       <div class="d-flex align-items-center px-3">
         <i class="fa fa-map-marker"></i>
-        <a [innerHTML]="item.name" class="ml-2"></a>
+        <a [innerHTML]="item.label" class="ml-2"></a>
       </div>
 
       </ng-template>

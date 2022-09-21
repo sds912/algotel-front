@@ -1,0 +1,113 @@
+[
+  {
+    "uid": "1",
+    "label": "Radisson Blu Hotel, Dakar Sea Plaza",
+    "createdAt": "",
+    "desc": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "Route de la Corniche Ouest, Dakar 16868 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "2",
+    "label": "Yaas Hotel Dakar Almadies",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "Route des Almadies, Dakar 16144 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "3",
+    "label": "Novotel Dakar",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "Ave Abdoulaye Fadiga Bp 2073, Dakar 18524 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "4",
+    "label": "Pullman Dakar Teranga",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "10 Rue Colbert Place de l'Indépendance, Dakar 3380 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "5",
+    "label": "Terrou-Bi",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "Boulevard Martin Luther King, Dakar 1179 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "6",
+    "label": "Radisson Hotel Dakar Diamniadio",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "Prolongement Autoroute A Peage A Cote Du Centre De Conference International Abou Diouf, Dakar 10200 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "7",
+    "label": "La Résuidence",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "2 Alamadies Zone, Dakar 24938 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "8",
+    "label": "Le DJOLOFF Boutique Hotel",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "7 rue Nani Fann Hock Place Jardin public, Dakar Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "9",
+    "label": "Ibis Dakar",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "No 2 Avenue Abdoulaye Fadiga, Dakar 18524 Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  },
+  {
+    "uid": "10",
+    "label": "La Villa 126",
+    "createdAt": "",
+    "city": "Dakar",
+    "countryCode": "SN",
+    "countryName": "Sénégal",
+    "address": "126 Rue Ng 113 Ngor Almadies, Dakar Sénégal",
+    "lat": 0.0,
+    "long": 0.0
+  }
+]

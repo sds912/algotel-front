@@ -14,6 +14,8 @@
   <div class="card-body">
     <h5 class="card-title font-weight-bold">{{post.label}} </h5>
     <p class="card-text text-right price">{{post.price}} F CFA</p>
-    <a *ngFor="let h of post.hours" href="#" class="badge badge-secondary py-1 px-2 mx-2">{{h}}</a>
+    <a  href="#" class="badge badge-success py-1 px-2 mx-2">{{post.from}}</a>
+    -
+    <a  href="#" class="badge badge-danger py-1 px-2 mx-2">{{post.until}}</a>
   </div>
 </div>
