@@ -1,15 +1,10 @@
-<div class="card mt-2" >
+<div *ngIf="posts.length > 0" class="card mt-2" >
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
     <div class="carousel-inner">
-      <div class="carousel-item" [class.active]="n === 0" *ngFor="let i of images; let n = index">
+      <div class="carousel-item" [class.active]="n === act" *ngFor="let i of posts; let n = index">
         <img class="d-block w-100 card-img-top" [src]="i.url" alt="...">
       </div>
     </div>
   </div>
 </div>
+<app-loader></app-loader>

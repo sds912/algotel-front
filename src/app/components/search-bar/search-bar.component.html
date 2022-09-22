@@ -41,11 +41,16 @@
 
   <div *ngIf="step==1">
     <mat-card class="demo-inline-calendar-card" style="width: 100%;">
-      <mat-calendar [(selected)]="selected" (selectedChange)="onSelect(selected)"></mat-calendar>
+      <mat-calendar [(selected)]="selected" (selectedChange)="onSelect(selected)" [dateClass]="dateClass" ></mat-calendar>
     </mat-card>
     {{selected}}
   </div>
 
+
 </div>
+
+<mat-datepicker #releasedAtPicker color="accent">
+
+</mat-datepicker>
 
 

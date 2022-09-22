@@ -10,9 +10,19 @@ export class PostCardComponent implements OnInit {
 
    @Input() post!: Post
 
+   act: number = 1;
+
   constructor() { }
 
   ngOnInit(): void {
+
+    setInterval(() => {
+      if(this.act < this.post.images.length - 1){
+      this.act ++
+      }else{
+       this.act = 0;
+      }
+     },5000);
   }
 
 }

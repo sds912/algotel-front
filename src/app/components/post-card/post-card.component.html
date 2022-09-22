@@ -1,12 +1,13 @@
 <div class="card mt-2" >
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" [class.active]="act == 0"></li>
+      <li data-target="#carouselExampleIndicators" [class.active]="act == 1"></li>
+      <li data-target="#carouselExampleIndicators" [class.active]="act == 2"></li>
+
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item" [class.active]="n === 0" *ngFor="let i of post.images; let n = index">
+      <div class="carousel-item" [class.active]="n === act" *ngFor="let i of post.images; let n = index">
         <img class="d-block w-100 card-img-top" [src]="i" alt="...">
       </div>
     </div>

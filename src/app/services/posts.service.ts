@@ -5,6 +5,7 @@ import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/comp
 import { Post } from '../models/post';
 
 const postPath: string = "posts";
+const bottomCarousel: string ="bottom-carousel";
 
 
 @Injectable({
@@ -26,6 +27,10 @@ export class PostsService {
     })
   }
 
+  findBottomCarousel(){
+    return this.firestore.collection(bottomCarousel).get();
+  }
+
 
    savePost(post: Post){
     return this.firestore.collection(postPath).add(post).then(res => {
@@ -45,12 +50,9 @@ export class PostsService {
    }
 
    findByFilter(param: Search){
+    console.log(param)
     var postCollection: AngularFirestoreCollection<Post> = this.firestore.collection<Post>(postPath, ref => {
-     if(param.address != null) ref.where('address', '==', param.address)
-     if(param.date    != null) ref.where('from',    '==', param.date)
-     if(param.label   != null) ref.where('label',   '==', param.label)
-     if(param.label   != null) ref.where('label',   '==', param.label)
-      return ref;
+      return ref.where('avDate',    '==', param.date).limit(10)
     });
 
     return postCollection.valueChanges();

@@ -1,3 +1,4 @@
+import { MomentUtcDateAdapter } from './utlis/momentUtcDateAdapter';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import { AutocompleteLibModule } from 'angular-ng-autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import { MatMomentDateModule } from '@angular/material-moment-adapter';
+import { MatMomentDateModule, MAT_MOMENT_DATE_FORMATS } from '@angular/material-moment-adapter';
 import { ResultComponent } from './pages/result/result.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { SearchBtnComponent } from './components/search-btn/search-btn.component';
@@ -35,6 +36,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { SanitazePipe } from './utlis/sanitaze.pipe';
+import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 
 
 
@@ -59,7 +62,8 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     LoaderComponent,
     SearchComponent,
     HomeBottomCarouselComponent,
-    DownloadComponent
+    DownloadComponent,
+    SanitazePipe
   ],
   imports: [
     BrowserModule,
@@ -87,7 +91,9 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
   ],
   providers: [
-
+    { provide: MAT_DATE_LOCALE, useValue: 'en-GB' },
+    { provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS },
+    { provide: DateAdapter, useClass: MomentUtcDateAdapter },
   ],
   bootstrap: [AppComponent]
 })

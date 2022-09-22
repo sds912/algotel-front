@@ -1,4 +1,7 @@
+import { LoaderService } from './../../services/loader.service';
+import { PostsService } from './../../services/posts.service';
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-home-bottom-carousel',
@@ -7,29 +10,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeBottomCarouselComponent implements OnInit {
 
-  images:any [] = [
-    {
-      "label": "",
-      "url": "assets/img1.png"
-    },
-    {
-      "label": "",
-      "url": "assets/img2.png"
-    },
-    {
-      "label": "",
-      "url": "assets/img3.png"
-    },
-    {
-      "label": "",
-      "url": "assets/img4.png"
-    }
-  ]
+  posts:any [] = []
+  act: number = 0;
 
 
-  constructor() { }
+  constructor(private postService: PostsService, private loaderService: LoaderService) {
+    this.getBottomCarouselPost();
+  }
+
+
+  getBottomCarouselPost(){
+    this.loaderService.show();
+    this.postService.findBottomCarousel().subscribe(res => {
+      res.docs.map(d => this.posts.push(d.data()));
+      this.loaderService.hide();
+    })
+  }
 
   ngOnInit(): void {
+    setInterval(() => {
+     if(this.act < this.posts.length - 1){
+     this.act ++
+     }else{
+      this.act = 0;
+     }
+    },5000);
+
+
   }
+
+
 
 }

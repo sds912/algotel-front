@@ -14,4 +14,5 @@ export interface Post {
   lat:         string;
   long:        string;
   createdAt:   string;
+  avDate:      string;
 }

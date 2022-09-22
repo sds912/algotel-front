@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { Search } from 'src/app/models/search';
 import { LoaderService } from 'src/app/services/loader.service';
 import { state } from '@angular/animations';
+import { MatCalendarCellCssClasses } from '@angular/material/datepicker';
 
 
 @Component({
@@ -58,11 +59,13 @@ export class SearchBarComponent implements OnInit {
 
   onSelect(v?: Date){
     this.loader.show();
-    this.search.date = v!.toISOString();
+    this.search.date = v!.toISOString().substring(0, 10);
+    /*
     this.router.navigate(['results', {
       "label":   this.search.label,
       "address": this.search.address,
       "date":    this.search.date}])
+*/
 
   }
 
@@ -75,6 +78,13 @@ export class SearchBarComponent implements OnInit {
     this.hotelService.findAllHotels().subscribe(res => {
       this.hotels = res;
     })
+  }
+
+  dateClass = (d: any): MatCalendarCellCssClasses => {
+    const date = 6;
+   console.log(d)
+    // Highlight saturday and sunday.
+    return 'highlight-dates';
   }
 
 }

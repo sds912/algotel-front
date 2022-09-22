@@ -16,7 +16,6 @@
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
     "@angular/fire": "^7.4.1",
-    "firebase": "^9.8.4",
     "@angular/forms": "^14.2.0",
     "@angular/material": "^14.2.2",
     "@angular/material-moment-adapter": "^14.2.2",
@@ -24,6 +23,9 @@
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
     "angular-ng-autocomplete": "^2.0.12",
+    "bootstrap": "4.6",
+    "firebase": "^9.8.4",
+    "jquery": "^3.6.1",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
