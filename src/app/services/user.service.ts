@@ -14,4 +14,8 @@ export class UserService {
   saveUserInfo(d: Register, uid: string){
     return this.firestore.collection("users").doc(uid).set(d);
   }
+
+  findUserByUid(uid: string){
+    return this.firestore.collection("users").doc(uid).get();
+  }
 }

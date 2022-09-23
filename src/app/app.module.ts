@@ -1,4 +1,4 @@
-import { MomentUtcDateAdapter } from './utlis/momentUtcDateAdapter';
+import { MomentUtcDateAdapter } from './utils/momentUtcDateAdapter';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -36,7 +36,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
-import { SanitazePipe } from './utlis/sanitaze.pipe';
+import { SanitazePipe } from './utils/sanitaze.pipe';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
 import { MyCarouselComponent } from './components/my-carousel/my-carousel.component';
 import { MyImgSliderComponent } from './components/my-img-slider/my-img-slider.component';
@@ -45,9 +45,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
-import { LoginFormComponent } from './components/login-form/login-form.component';
 import { RegisterFormComponent } from './components/register-form/register-form.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 
 

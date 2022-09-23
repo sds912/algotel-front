@@ -26,6 +26,7 @@ export class ResultComponent implements OnInit {
   getPosts(){
     this.loaderService.show()
     const routeParams: any = this.route.snapshot.paramMap;
+
     let param: Search = {
       label: routeParams.get("label"),
       address: routeParams.get("address"),

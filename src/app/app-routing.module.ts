@@ -31,7 +31,7 @@ const routes: Routes = [
     component: LoginRegisterComponent
   },
   {
-    path: "paiement",
+    path: "paiement/:id",
     component: PaiementComponent
   },
   { path: '',   redirectTo: '', pathMatch: 'full' }, // redirect to `first-component`
