@@ -49,6 +49,10 @@ export class PostsService {
      return postCollection.valueChanges();
    }
 
+   findPostById(uid:string){
+     return this.firestore.collection(postPath).doc(uid).get();
+   }
+
    findByFilter(param: Search){
     console.log(param)
     var postCollection: AngularFirestoreCollection<Post> = this.firestore.collection<Post>(postPath, ref => {

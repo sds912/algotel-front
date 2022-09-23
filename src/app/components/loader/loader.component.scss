@@ -6,9 +6,18 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #0d199f;
+  background-color: #FFFFFF !important;
   z-index: 99999;
-  color: red;
+
+  .fa{
+
+      position: absolute;
+      left: 40%;
+      top: 44%;
+      color: #009FFD;
+  }
  }
+
+
 
 

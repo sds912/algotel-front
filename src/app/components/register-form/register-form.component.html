@@ -1,0 +1,33 @@
+<div *ngIf="errorMessage != ''" class="alert alert-danger" role="alert">
+  Email ou Mot de passe invalide
+ </div>
+ <form [formGroup]="registerForm" (submit)="onSubmit()">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <label for="firstName">Prénom</label>
+        <input type="text" id="firstName" class="form-control" placeholder="Babacar" required formControlName="firstName">
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+       <label for="lastName">Nom</label>
+        <input type="text" id="lastName" class="form-control" placeholder="Senghor" formControlName="lastName">
+      </div>
+    </div>
+  </div>
+  <div class="form-group mb-3">
+    <label for="phone">Téléphone</label>
+    <input type="tel" class="form-control p-2" id="phone" placeholder="70 000 00 00" required formControlName="phone" >
+  </div>
+   <div class="form-group mb-3">
+     <label for="email">Email</label>
+     <input type="email" class="form-control p-2" id="email" placeholder="name@example.com" required formControlName="email" >
+   </div>
+   <div class="form-group mb-3">
+     <label for="password">Mot de passe</label>
+     <input type="password" class="form-control p-2" id="password" placeholder="******"  required formControlName="password" >
+   </div>
+
+   <button [disabled]="!registerForm.valid" type="submit" class="btn btn-primary btn-block">S'authentifier</button>
+ </form>

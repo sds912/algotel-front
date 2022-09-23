@@ -1,10 +1,9 @@
-<div class="card mt-2" >
+<div class="card mt-2" routerLink="/posts/{{post.uid}}" >
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" [class.active]="act == 0"></li>
       <li data-target="#carouselExampleIndicators" [class.active]="act == 1"></li>
       <li data-target="#carouselExampleIndicators" [class.active]="act == 2"></li>
-
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item" [class.active]="n === act" *ngFor="let i of post.images; let n = index">

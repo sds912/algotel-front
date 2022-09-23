@@ -1,0 +1,15 @@
+<div *ngIf="errorMessage != ''" class="alert alert-danger" role="alert">
+ Email ou Mot de passe invalide
+</div>
+<form [formGroup]="authForm" (submit)="onSubmit()">
+  <div class="col-md-4 mb-3">
+    <label for="email">Email</label>
+    <input type="email" class="form-control p-2" id="email" placeholder="name@example.com" required formControlName="email" >
+  </div>
+  <div class="col-md-4 mb-3">
+    <label for="password">Mot de passe</label>
+    <input type="password" class="form-control p-2" id="password" placeholder="******"  required formControlName="password" >
+  </div>
+
+  <button [disabled]="!authForm.valid" type="submit" class="btn btn-primary btn-block">S'authentifier</button>
+</form>

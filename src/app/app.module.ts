@@ -38,6 +38,16 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { SanitazePipe } from './utlis/sanitaze.pipe';
 import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/material/core';
+import { MyCarouselComponent } from './components/my-carousel/my-carousel.component';
+import { MyImgSliderComponent } from './components/my-img-slider/my-img-slider.component';
+import { PostDetailsComponent } from './pages/post-details/post-details.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginRegisterComponent } from './pages/login-register/login-register.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
+import { RegisterFormComponent } from './components/register-form/register-form.component';
+import { PaiementComponent } from './pages/paiement/paiement.component';
 
 
 
@@ -63,7 +73,17 @@ import { DateAdapter, MAT_DATE_FORMATS, MAT_DATE_LOCALE } from '@angular/materia
     SearchComponent,
     HomeBottomCarouselComponent,
     DownloadComponent,
-    SanitazePipe
+    SanitazePipe,
+    MyCarouselComponent,
+    MyImgSliderComponent,
+    PostDetailsComponent,
+    NotFoundComponent,
+    LoginComponent,
+    RegisterComponent,
+    LoginRegisterComponent,
+    LoginFormComponent,
+    RegisterFormComponent,
+    PaiementComponent
   ],
   imports: [
     BrowserModule,

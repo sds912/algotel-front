@@ -60,12 +60,12 @@ export class SearchBarComponent implements OnInit {
   onSelect(v?: Date){
     this.loader.show();
     this.search.date = v!.toISOString().substring(0, 10);
-    /*
+
     this.router.navigate(['results', {
       "label":   this.search.label,
       "address": this.search.address,
       "date":    this.search.date}])
-*/
+
 
   }
 
