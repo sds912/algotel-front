@@ -1,18 +1,18 @@
 <div class="container-fluid m-0 p-0" *ngIf="post != null" >
-   <app-map-viewer [coord]="{lat: post.hotel.lat, long: post.hotel.long}"></app-map-viewer>
    <app-my-img-slider  [images]="post.images"></app-my-img-slider>
-   <div class="container py-4">
-    <div class="card card-body bg-white">
-      <h3 class="mt-2">{{post.label}}</h3>
-      <p> <i class="fa fa-map-marker"></i> <span class="ml-2 text-muted">{{post.hotel.address}}</span></p>
+   <div class="p-3">
+    <h3 class="mt-2">{{post.label}}</h3>
+    <p> <i class="fa fa-map-marker text-muted"></i> <span class="ml-2 text-muted">{{post.hotel.address}}</span></p>
+    <div class="card card-body bg-white mt-2" [class.active]="i == 0" *ngFor="let d of post.availability; let i = index">
+      <p class="text-center">{{d.date}}</p>
       <p class="mt-3">
-      <i class="fa fa-clock-o fa-lg"></i> <span class="ml-2 font-weight-bolder" style="font-size: 18px;">{{post.availability[0].from}} - {{post.availability[0].until}}</span>
+      <i class="fa fa-clock-o fa-lg"></i> <span class="ml-2 font-weight-bolder" style="font-size: 18px;">{{d.from}} - {{d.until}}</span>
       </p>
+      <p>{{d.label}}</p>
       <p class="text-right"><span class="price">{{post.price }} F CFA</span></p>
+      <button class="btn btn" (click)="navigate()">Je réserve</button>
     </div>
-    <div class="card card-body">
-       <button class="btn btn-block" (click)="navigate()">Je réserve</button>
-    </div>
-
+    <h6>Emplacement</h6>
+    <app-map-viewer [coord]="{lat: post.hotel.lat, long:post.hotel.long}"></app-map-viewer>
    </div>
 </div>

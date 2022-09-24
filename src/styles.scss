@@ -16,3 +16,26 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 
+
+
+.selectedCells{
+  border: 2px solid #D54C68 !important;
+  border-radius: 50% !important;
+}
+
+.mat-calendar-body-selected{
+  background-color: #D54C68 !important;
+}
+
+
+
+.unSelected{
+  text-decoration: line-through !important;
+  .mat-focus-indicator{
+    text-decoration: line-through !important;
+
+  }
+}
+
+
+

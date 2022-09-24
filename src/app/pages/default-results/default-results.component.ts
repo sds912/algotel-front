@@ -3,6 +3,7 @@ import { LoaderService } from 'src/app/services/loader.service';
 import { PostsService } from './../../services/posts.service';
 import { Post } from './../../models/post';
 import { Component, OnInit } from '@angular/core';
+import { MatCalendarCellClassFunction } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-default-results',
@@ -73,6 +74,17 @@ export class DefaultResultsComponent implements OnInit {
 
   onChange(d: Date){
     this.getByDatePosts(d.toISOString().substring(0,10));
+  }
+
+  getClass(type: any){
+    let date: string[] = [
+      "2022-09-21",
+      "2022-09-25",
+      "2022-09-27",
+      "2022-09-30"];
+
+  return date.includes(type.toISOString().substring(0,10)) ? "selectedCells": "unSelected"
+
   }
 
 }

@@ -15,7 +15,7 @@
       </label>
     </div>
     <mat-card class="demo-inline-calendar-card" *ngIf="opened">
-      <mat-calendar  [(selected)]="selected" (selectedChange)="onChange(selected)" ></mat-calendar>
+      <mat-calendar [dateClass]="getClass" [(selected)]="selected" (selectedChange)="onChange(selected)" ></mat-calendar>
     </mat-card>
   </div>
   <app-post-card *ngFor="let p of posts" [post]="p"></app-post-card>
