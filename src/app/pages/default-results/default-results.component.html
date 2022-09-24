@@ -1,0 +1,25 @@
+
+<div class="container">
+
+
+  <div class="card mt-3 bt-5">
+    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+      <label class="btn" [class.active]="filterOption == 0" (click)="filter(0)">
+        <input type="radio" name="options" id="option1" autocomplete="off" [checked]="filterOption == 0"  > Aujourd'hui
+      </label>
+      <label class="btn" [class.active]="filterOption == 1"  (click)="filter(1)">
+        <input type="radio" name="options" id="option2" autocomplete="off" [checked]="filterOption == 1" > Demain
+      </label>
+      <label class="btn " [class.active]="filterOption == 2" (click)="filter(2)">
+        <input type="radio" name="options" id="option3" autocomplete="off" [checked]="filterOption == 2"   > <i class="fa fa-calendar"></i>
+      </label>
+    </div>
+    <mat-card class="demo-inline-calendar-card" *ngIf="opened">
+      <mat-calendar  [(selected)]="selected" (selectedChange)="onChange(selected)" ></mat-calendar>
+    </mat-card>
+  </div>
+  <app-post-card *ngFor="let p of posts" [post]="p"></app-post-card>
+</div>
+
+
+

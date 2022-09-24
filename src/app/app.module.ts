@@ -2,7 +2,6 @@ import { MomentUtcDateAdapter } from './utils/momentUtcDateAdapter';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -48,6 +47,9 @@ import { LoginRegisterComponent } from './pages/login-register/login-register.co
 import { RegisterFormComponent } from './components/register-form/register-form.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { DefaultResultsComponent } from './pages/default-results/default-results.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { MapViewerComponent } from './components/map-viewer/map-viewer.component';
 
 
 
@@ -83,7 +85,9 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     LoginRegisterComponent,
     LoginFormComponent,
     RegisterFormComponent,
-    PaiementComponent
+    PaiementComponent,
+    DefaultResultsComponent,
+    MapViewerComponent
   ],
   imports: [
     BrowserModule,
@@ -104,7 +108,8 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
-    provideStorage(() => getStorage())
+    provideStorage(() => getStorage()),
+    GoogleMapsModule
 
 
 

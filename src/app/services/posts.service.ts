@@ -62,6 +62,14 @@ export class PostsService {
     return postCollection.valueChanges();
    }
 
+   findFilterByDate(date: string){
+    var postCollection: AngularFirestoreCollection<Post> = this.firestore.collection<Post>(postPath, ref => {
+      return ref.where('avDates',    'array-contains', date).limit(10)
+    });
+
+    return postCollection.valueChanges();
+   }
+
 
    delete(uid: string){
     return this.firestore.collection(postPath).doc(uid).delete();

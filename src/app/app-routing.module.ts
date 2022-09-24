@@ -1,3 +1,4 @@
+import { DefaultResultsComponent } from './pages/default-results/default-results.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
 import { LoginRegisterComponent } from './pages/login-register/login-register.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: "results",
     component: ResultComponent
+  },
+  {
+     path: "booking",
+     component: DefaultResultsComponent
   },
   {
     path: "search",

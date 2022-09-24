@@ -17,6 +17,11 @@ export class HomeComponent implements OnInit {
   constructor(private httpClient: HttpClient,
     private hotelService: HotelsService,
     private postService:PostsService) {
+      /*
+      hotelService.findAllHotels().subscribe(res => {
+        console.log(JSON.stringify(res))
+      })
+      */
     //hotelService.initHotel()
     //postService.initPost();
    }

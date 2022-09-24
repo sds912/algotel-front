@@ -1,212 +1,143 @@
 [
   {
-    "uid": "1",
-    "label": "Radisson Blu Hotel, Dakar Sea Plaza",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/db/0a/a1/mermoz-meeting-room.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/db/03/27/pool.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/a3/e2/ce/junior-suite.jpg?w=1100&h=-1&s=1"
-    ],
-    "price": 150000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "Route de la Corniche Ouest, Dakar 16868 Sénégal",
-    "phone": "33 869 33 33",
-    "lat": 0.0,
-    "long": 0.0
+     "desc":"",
+     "hotel": {
+      "long":-17.45561,
+      "createdAt":"",
+      "countryCode":"SN",
+      "countryName":"Sénégal",
+      "address":"No 2 Avenue Abdoulaye Fadiga, Dakar 18524 Sénégal",
+      "lat":14.67753,
+      "city":"Dakar",
+      "label":"Ibis Dakar",
+      "uid":"JGtlTqzk7XSFVsCFjxnA"
+      },
+     "label":"Ibis Dakar",
+     "uid":"4Ivdgc47KgyT9fMpEIyV",
+     "price":90000,
+     "avDate":"2022-09-23",
+     "images":[
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost1.jpg?alt=media&token=b3f3ad14-66d5-4c0f-bb42-560fa3ebd9d4",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost10.jpg?alt=media&token=1c555666-d97e-411d-923c-ba4df74c6cdb",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost2.jpg?alt=media&token=5c6a99ab-e5f8-44ce-815e-4647d8626805"
+     ],
+     "createdAt":"",
+     "availability": [
+      {
+        "date": "2022-09-21",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-22",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-23",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-24",
+        "from": "13:20",
+        "until": "15:30"
+      }
+
+     ]
   },
   {
-    "uid": "2",
-    "label": "Yaas Hotel Dakar Almadies",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/3d/a3/a0/yaas-hotel-dakar-almadies.jpg?w=2000&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/3d/a1/a6/yaas-hotel-dakar-almadies.jpg?w=2000&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/3d/a3/a2/yaas-hotel-dakar-almadies.jpg?w=2000&h=-1&s=1"
-    ],
-    "price": 120000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "Route des Almadies, Dakar 16144 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
+     "price":170000,
+     "uid":"4lS103FzmLa7Rx6iZZxO",
+     "images":[
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost2.jpg?alt=media&token=5c6a99ab-e5f8-44ce-815e-4647d8626805",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost3.jpg?alt=media&token=24528ccd-0b7c-4416-b586-06d372e94c8f",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost4.jpg?alt=media&token=511c61cf-e87a-45db-b160-4ba771367359"
+     ],
+     "desc":"",
+     "avDate":"2022-09-22",
+     "hotel": {
+      "countryName":"Sénégal",
+      "long":-17.4351,
+      "uid":"LpiFeBQg16SyxHquplPr",
+      "createdAt":"",
+      "label":"Pullman Dakar Teranga",
+      "city":"Dakar",
+      "address":"10 Rue Colbert Place de l'Indépendance, Dakar 3380 Sénégal",
+      "countryCode":"SN",
+      "lat":14.67964
+     },
+     "createdAt":"",
+     "label":"Pullman Dakar Teranga",
+     "availability": [
+      {
+        "date": "2022-09-21",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-22",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-23",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-24",
+        "from": "13:20",
+        "until": "15:30"
+      }
+
+     ]
   },
   {
-    "uid": "3",
-    "label": "Novotel Dakar",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/23/b0/52/c7/exterior-view.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ad/16/5d/novotel-dakar.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/ad/08/30/cocktails.jpg?w=1400&h=-1&s=1"
-    ],
-    "price": 140000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "Ave Abdoulaye Fadiga Bp 2073, Dakar 18524 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "4",
-    "label": "Pullman Dakar Teranga",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/e2/6c/70/barlounge.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/e4/85/ac/exterior-view.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/24/e2/6c/5f/spa.jpg?w=1100&h=-1&s=1"
-    ],
-    "price": 170000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "10 Rue Colbert Place de l'Indépendance, Dakar 3380 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "5",
-    "label": "Terrou-Bi",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/65/bf/8c/the-beach.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/f2/dd/ea/terrou-bi.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/f2/f2/50/terrou-bi.jpg?w=1400&h=-1&s=1"
-    ],
-    "price": 200000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "Boulevard Martin Luther King, Dakar 1179 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "6",
-    "label": "Radisson Hotel Dakar Diamniadio",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/80/2d/74/exterior.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/80/31/33/suite-balcony-whirlpool.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/80/30/f8/presuidential-suite.jpg?w=1100&h=-1&s=1"
-    ],
-    "price": 130000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "Prolongement Autoroute A Peage A Cote Du Centre De Conference International Abou Diouf, Dakar 10200 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "7",
-    "label": "La Résuidence",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7b/2b/8a/la-resuidence.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7b/47/5c/la-resuidence.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/7b/1f/91/la-resuidence.jpg?w=1400&h=-1&s=1"
-    ],
-    "price": 190000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "2 Alamadies Zone, Dakar 24938 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "8",
-    "label": "Le DJOLOFF Boutique Hotel",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/65/63/bd/petit-dejeuner-sur-le.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-s/03/12/da/db/hotel-le-djoloff.jpg?w=600&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/65/63/ca/deuxieme-terrasse-sur.jpg?w=1400&h=-1&s=1"
-    ],
-    "price": 70000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "7 rue Nani Fann Hock Place Jardin public, Dakar Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "9",
-    "label": "Ibis Dakar",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/fb/63/54/exterior-view.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/fb/63/81/bar-lounge.jpg?w=1100&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/fb/63/7a/guest-room.jpg?w=1100&h=-1&s=1"
-    ],
-    "price": 90000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "No 2 Avenue Abdoulaye Fadiga, Dakar 18524 Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
-  },
-  {
-    "uid": "10",
-    "label": "La Villa 126",
-    "createdAt": "",
-    "from": "",
-    "until": "",
-    "desc": "",
-    "images": [
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/71/86/55/photo2jpg.jpg?w=1400&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/37/f0/7e/villa126.jpg?w=600&h=-1&s=1",
-      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/6b/ab/2d/la-villa-126.jpg?w=1400&h=-1&s=1"
-    ],
-    "price": 70000,
-    "city": "Dakar",
-    "countryCode": "SN",
-    "countryName": "Sénégal",
-    "address": "126 Rue Ng 113 Ngor Almadies, Dakar Sénégal",
-    "phone": "",
-    "lat": 0.0,
-    "long": 0.0
+     "hotel":{
+      "address":"Boulevard Martin Luther King, Dakar 1179 Sénégal",
+      "long":-17.43716,
+      "lat":14.69822,
+      "label":"Terrou-Bi",
+      "countryCode":"SN",
+      "city":"Dakar",
+      "createdAt":"",
+      "countryName":"Sénégal",
+      "uid":"SLH8g1JO1B5IJeLWqbKJ"
+   },
+     "desc":"",
+     "createdAt":"2022-09-22",
+     "price":200000,
+     "avDate":"2022-09-22",
+     "images":[
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost5.jpg?alt=media&token=281f4088-2a53-4a7f-9830-2937dd03c522",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost6.jpg?alt=media&token=3dad3674-d11e-4968-aba9-6275a8ef7cbf",
+        "https://firebasestorage.googleapis.com/v0/b/algotel-a1f99.appspot.com/o/posts%2Fpost7.jpg?alt=media&token=9261dbd2-19b5-4941-b97a-7d2dea6d916d"
+     ],
+     "label":"Terrou-Bi",
+     "uid":"6lC3zd2Xu4OlxP78xIbX",
+     "availability": [
+      {
+        "date": "2022-09-21",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-22",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-23",
+        "from": "13:20",
+        "until": "15:30"
+      },
+      {
+        "date": "2022-09-24",
+        "from": "13:20",
+        "until": "15:30"
+      }
+
+     ]
   }
 ]
