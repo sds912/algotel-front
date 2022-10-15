@@ -50,6 +50,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { DefaultResultsComponent } from './pages/default-results/default-results.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { MapViewerComponent } from './components/map-viewer/map-viewer.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 
 
@@ -87,7 +88,8 @@ import { MapViewerComponent } from './components/map-viewer/map-viewer.component
     RegisterFormComponent,
     PaiementComponent,
     DefaultResultsComponent,
-    MapViewerComponent
+    MapViewerComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,

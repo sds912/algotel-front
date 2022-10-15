@@ -1,0 +1,20 @@
+<div id="side-wrapper" [class.opened]="!isOpened">
+  <div id="side-menu">
+    <div class="header">
+      <img src="assets/logo-1.png" class="img-fluid" width="120px" />
+      <button class="btn btn-outline-danger " (click)="close()">Fermer</button>
+    </div>
+    <div class="mt-5 px-3">
+      <ul class="list-unstyled">
+        <li class=" mt-4" *ngFor="let m of menus">
+          <i [ngClass]="m.icon"></i>
+          <span class="ml-2">{{m.label}}</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+
+  </div>
+</div>
+
