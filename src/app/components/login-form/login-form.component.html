@@ -10,6 +10,7 @@
     <label for="password">Mot de passe</label>
     <input type="password" class="form-control p-2" id="password" placeholder="******"  required formControlName="password" >
   </div>
-
-  <button [disabled]="!authForm.valid" type="submit" class="btn btn-primary btn-block">S'authentifier</button>
+ <div>
+  <button [disabled]="!authForm.valid" type="submit" class="btn btn-primary btn-block ">S'authentifier</button>
+ </div>
 </form>

@@ -3,7 +3,7 @@ import { LoaderService } from 'src/app/services/loader.service';
 import { PostsService } from './../../services/posts.service';
 import { Post } from './../../models/post';
 import { Component, OnInit } from '@angular/core';
-import { MatCalendarCellClassFunction } from '@angular/material/datepicker';
+import { MatCalendarCellClassFunction, MatCalendarCellCssClasses } from '@angular/material/datepicker';
 
 @Component({
   selector: 'app-default-results',
@@ -15,6 +15,7 @@ export class DefaultResultsComponent implements OnInit {
   posts!: Post[];
   opened: boolean = false;
   selected!: Date ;
+  avDates: string[] = [];
 
   filterOption: number = 0;
 
@@ -33,6 +34,7 @@ export class DefaultResultsComponent implements OnInit {
     this.postService.findAllPosts()
     .subscribe((res: any) => {
        this.posts = res;
+       this.getAvailableDates(this.posts);
        this.loader.hide();
     })
   }
@@ -43,6 +45,7 @@ export class DefaultResultsComponent implements OnInit {
     this.postService.findFilterByDate(date)
     .subscribe((res: any) => {
        this.posts = res;
+       this.getAvailableDates(this.posts);
        this.loader.hide();
        this.opened = false;
 
@@ -72,19 +75,18 @@ export class DefaultResultsComponent implements OnInit {
 
   }
 
-  onChange(d: Date){
+  onChange(d: any){
     this.getByDatePosts(d.toISOString().substring(0,10));
   }
 
-  getClass(type: any){
-    let date: string[] = [
-      "2022-09-21",
-      "2022-09-25",
-      "2022-09-27",
-      "2022-09-30"];
+  getAvailableDates(posts: Post[]){
+   posts.map(p => {
+    p.availability.map(d => this.avDates.push(d.date))
+  })
+  }
 
-  return date.includes(type.toISOString().substring(0,10)) ? "selectedCells": "unSelected"
-
+  getClass( dates: string[]){
+  return (date: any): MatCalendarCellCssClasses => dates.includes(date.toISOString().substring(0,10)) ? "selectedCells": "unSelected"
   }
 
 }

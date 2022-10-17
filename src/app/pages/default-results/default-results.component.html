@@ -1,7 +1,4 @@
-
 <div class="container">
-
-
   <div class="card mt-3 bt-5">
     <div class="btn-group btn-group-toggle" data-toggle="buttons">
       <label class="btn" [class.active]="filterOption == 0" (click)="filter(0)">
@@ -15,7 +12,7 @@
       </label>
     </div>
     <mat-card class="demo-inline-calendar-card" *ngIf="opened">
-      <mat-calendar [dateClass]="getClass" [(selected)]="selected" (selectedChange)="onChange(selected)" ></mat-calendar>
+      <mat-calendar [dateClass]="getClass(avDates)" [(selected)]="selected" (selectedChange)="onChange(selected)" ></mat-calendar>
     </mat-card>
   </div>
   <app-post-card *ngFor="let p of posts" [post]="p"></app-post-card>

@@ -4,4 +4,10 @@
             [zoom]="zoom"
             (mapClick)="moveMap($event)"
             (mapMousemove)="move($event)">
+            <map-marker
+    *ngFor="let marker of markers"
+    [position]="marker.position"
+    [options]="marker.options"
+  >
+  </map-marker>
 </google-map>

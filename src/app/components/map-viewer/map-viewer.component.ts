@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MapViewerComponent implements OnInit {
 
+  markers :any[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +18,7 @@ export class MapViewerComponent implements OnInit {
       lng: this.coord.long
   };
   this.zoom = 12
+  this.addMarker()
   }
 
   @Input() coord: any;
@@ -31,6 +34,21 @@ export class MapViewerComponent implements OnInit {
     }
     move(event: google.maps.MapMouseEvent) {
         if (event.latLng != null) this.display = event.latLng.toJSON();
+    }
+
+    addMarker() {
+      this.markers.push({
+        position: {
+          lat: this.coord.lat,
+          lng: this.coord.long
+        },
+        label: {
+          color: 'red',
+          text: '' ,
+        },
+        title: '',
+        options: { animation: google.maps.Animation.BOUNCE },
+      });
     }
 
 }
